@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="mls">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <title></title>
+    <script src="js/libs/angular.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/angular-ui-router.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/angular-css.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="app.js" type="text/javascript" charset="utf-8"></script>
+    <script src="components/home/home.js" type="text/javascript" charset="utf-8"></script>
+    <script src="components/mine/mine.js" type="text/javascript" charset="utf-8"></script>
+    <script src="components/shopcar/shopcar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="components/sort/sort.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="box">
+		<div class="main" ui-view=""></div>
+		<div class="foot">
+			<ul>
+				<li ui-sref='home' href="">首页</li>
+				<li ui-sref='sort' href="">分类</li>
+				<li ui-sref='shopcar' href="">购物车</li>
+				<li ui-sref='mine' href="">我</li>
+			</ul>
+		</div>
+	<div>
+</body>
+</html>
